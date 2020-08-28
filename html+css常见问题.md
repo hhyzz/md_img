@@ -975,7 +975,7 @@ body{
 
   实现效果：
 
-  ![image-20200828215816065](F:\notes\Javascript\img\image-20200828215816065.png)
+  ![image-20200828215816065](https://github.com/hhyzz/md_img/blob/master/img/image-20200828215816065.png?raw=true)
 
   因此，只要将其他方向的border颜色设置为透明的就可以了
 
@@ -1098,5 +1098,5 @@ body{
     ::before 在指定元素的内容后面插入内容 2
     ::selection 选择指定元素中被用户选中的内容 3
 
-![1598617513(1)](F:\notes\Javascript\img\1598617513(1).jpg)
+![1598617513(1)](https://github.com/hhyzz/md_img/blob/master/img/1598617513(1).jpg?raw=true)
 
