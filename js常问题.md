@@ -1,0 +1,20 @@
+1. JavaScript的数据类型
+2. 判断变量的类型
+3. 数据类型转换
+4. 原型和原型链
+5. 闭包及优缺点
+6. call/apply/bind
+7. DOM事件流和事件委托
+8. Cookie/storage
+9. 数组和对象的常见方法
+10. new内部做了什么
+11. 防抖/节流
+12. requestAnimationFrame
+13. this指向
+14. 作用域链
+15. let/const/var的区别
+16. ES6异步编程：promise和async await
+17. 箭头函数
+18. JavaScript的运行机制
+19. 实现继承的几种方式
+20. 垃圾回收
