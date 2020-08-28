@@ -143,7 +143,7 @@
 
 + **常用：**
 
-  ![image-20200827214454810](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200827214454810.png)
+  ![image-20200827214454810](https://github.com/hhyzz/md_img/blob/master/img/image-20200827214454810.png?raw=true)
 
 #### DOCTYPE标签
 
@@ -184,15 +184,15 @@
 
 + **没有这两个属性：**脚本的下载和执行将会按照文档的先后顺序同步进行。当脚本下载和执行的时候，文档解析就会被阻塞
 
-  ![image-20200827221907098](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200827221907098.png)
+  ![image-20200827221907098](https://github.com/hhyzz/md_img/blob/master/img/image-20200827221907098.png?raw=true)
 
 + **defer属性：**
 
-  ![image-20200827222550020](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200827222550020.png)
+  ![image-20200827222550020](https://github.com/hhyzz/md_img/blob/master/img/image-20200827222550020.png?raw=true)
 
 + **async属性：**
 
-  ![image-20200827222246106](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200827222246106.png)
+  ![image-20200827222246106](https://github.com/hhyzz/md_img/blob/master/img/image-20200827222246106.png?raw=true)
 
 + **两者区别：**
 
@@ -204,13 +204,13 @@
 
 + **标准盒模型：**
 
-  ![image-20200827233844925](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200827233844925.png)
+  ![image-20200827233844925](https://github.com/hhyzz/md_img/blob/master/img/image-20200827233844925.png?raw=true)
 
   > **在标准的盒子模型中，width指content部分的宽度**
 
 + **ie/怪异盒模型：**
 
-  ![image-20200827233925882](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200827233925882.png)
+  ![image-20200827233925882](https://github.com/hhyzz/md_img/blob/master/img/image-20200827233925882.png?raw=true)
 
   >**在IE盒子模型中，width表示content+padding+border这三个部分的宽度**
 
@@ -458,29 +458,27 @@ body{
 
   **浏览器不会进行重排不会进行重绘，只是降低了alpha的数值达到透明**
 
-  opacity属性的意思是设置一个元素的透明度。这一位着将opacity设置为0只能从视觉上隐藏元素。而元素本身依然占据它自己的位置并对网页的布局起作用，它也将响应用户交互。
+  opacity属性的意思是设置一个元素的透明度。这一位着将opacity设置为0只能**从视觉上隐藏元素**。而元素本身依然占据它自己的位置并对网页的布局起作用，它也将响应用户交互。
 
 + **visibility:hidden**
 
   **浏览器不会进行重排但是会进行了重绘，重新绘制元素信息；transition有效果**
 
-  第二个要说的属性是visibility。将它的值设为hidden将隐藏我们的元素。如同opacity属性，被隐藏的元素依然会对我们的网页布局起作用。与opacity唯一不同的是它不会响应任何用户交互。此外元素在读屏软件中会被隐藏
+  第二个要说的属性是visibility。将它的值设为hidden将隐藏我们的元素。如同opacity属性，**被隐藏的元素依然会对我们的网页布局起作用**。与opacity唯一不同的是它**不会响应任何用户交互**。此外元素在读屏软件中会被隐藏
 
     注意，如果一个元素的visibility被设置为hidden，同时想要显示它的某个子孙元素，只要将那个元素的visibility显式设置为visible即可。
 
 + **diaplay:none**
 
-  **display属性在none和其他属性切换时：浏览器进行了重排和重绘的操作，重新安排页面元素位置以及重新绘制元素信息；transition没效果**
+  **display属性在none和其他属性切换时：浏览器进行了重排和重绘的操作，重新安排页面元素位置以及重新绘制元素信息；transition动画没效果**
 
-   display属性依照词义真正隐藏元素。将display属性设为none确保元素不可见并且连盒模型也不生成。使用这个属性，被隐藏的元素不占据任何空间。不仅如此，一旦display设为none任何对该元素直接打用户交互操作都不可能生效。此外，读屏软件也不会读到元素的内容。这种方式产生的效果就像元素完全不存在。
+   display属性依照词义真正隐藏元素。将display属性设为none确保元素不可见并且连盒模型也不生成。使用这个属性，**被隐藏的元素不占据任何空间(不占位)**。这种方式产生的效果就像元素完全不存在。
 
-    任何这个元素的子孙元素也会被同时隐藏。为这个属性添加过度动画是无效的，他的任何不同状态值之间的切换总是会立即生效。
-
-    不过请注意，通过DOM依然可以访问到这个元素。因此你可以通过DOM来操作它。
+  **任何这个元素的子孙元素也会被同时隐藏**。为这个属性添加过度动画是无效的，他的任何不同状态值之间的切换总是会立即生效。
 
 **以上三者的差别：**
 
-![image-20200828171707568](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200828171707568.png)
+![image-20200828171707568](https://github.com/hhyzz/md_img/blob/master/img/image-20200828171707568.png?raw=true)
 
 + **position:absolute**
 
@@ -504,17 +502,502 @@ body{
 
 #### Flex布局
 
++ **定义**——Flex 是 Flexible Box 的缩写，意为"弹性布局"，用来为盒状模型提供最大的灵活性。任何一个容器**（无论块级还是行内元素）**都可以指定为 Flex 布局。设为 Flex 布局以后，**子元素的`float`、`clear`和`vertical-align`属性将失效**。
+
++ **概念**——采用 Flex 布局的元素，称为 Flex 容器（flex container），**简称"容器"**。它的所有子元素自动成为容器成员，称为 Flex 项目（flex item），**简称"项目"**。
+
++ 父级常见属性
+
+  + flex-direction（决定主轴的方向）
+
+    ```css
+    .box {
+      flex-direction: row（默认值，主轴为水平，起点在左端）
+        | row-reverse （主轴为水平，起点在右端）
+        | column （主轴为垂直，起点在上沿）
+        | column-reverse;（主轴为垂直，起点在下沿）
+    }
+    ```
+
+  + flex-wrap（决定项目换不换行）
+
+    ```css
+    .box{
+      flex-wrap: nowrap（默认值，不换行，超出就将子元素变小）
+        | wrap （换行，排到第一行下面）
+        | wrap-reverse;（换行，排到第一行上面）
+    }
+    ```
+
+  + flex-flow（设置主轴和是否换行的简写）
+
+    ```css
+    .box {
+      flex-flow: <flex-direction> || <flex-wrap>;
+    }
+    ```
+
+  + justify-content（设置主轴子元素的排列方式）
+
+    ```css
+    .box {
+      justify-content: flex-start （默认值，左对齐）
+        | flex-end （右对齐）
+        | center （居中）
+        | space-between （两端对齐，项目间隔相等）
+        | space-around; （所有项目平分剩余空间，margin的left和right都相等）
+    }
+    ```
+
+  + align-items（设置侧轴子元素的排列方式）**（单行）**
+
+    ```css
+    .box {
+      align-items: flex-start （侧轴起点对齐）
+        | flex-end（侧轴终点对齐）
+        | center （侧轴中点对齐）
+        | baseline （项目的第一行文字的基线对齐。）
+        | stretch; （项目没有高度的时候有作用，高度占满容器）
+    }
+    ```
+
+  + align-content（设置侧轴子元素的排列方式）**（多行，单行没有效果）**
+
+    ```css
+    .box {
+      align-content: flex-start （侧轴起点对齐）
+        | flex-end （侧轴终点对齐）
+        | center （侧轴中点对齐）
+        | space-between （对齐侧轴两端，项目间隔相等）
+        | space-around （所有项目平分剩余侧轴空间）
+        | stretch;（项目没有高度的时候有作用，平分高度占满容器）
+    }
+    ```
+
++ 子级常见属性
+
+  + order（定义项目的排列顺序。数值越小，排列越靠前，默认为0）
+
+    ```css
+    .item {
+      order: <integer>;例如：-1，0，1排列
+    }
+    ```
+
+  + flex-grow（定义项目的放大比例，默认为`0`，若都为1，则平分，有一个为2则其占两份）
+
+  + flex-shrink（定义了项目的缩小比例，空间不够的话，若值为1（默认）缩小，值为0不缩小）
+
+  + flex-basis（定义项目本身大小）
+
+  + **flex**（该属性有两个快捷值：`auto` (`1 1 auto`) 和 none (`0 0 auto`)。）
+
+    ```css
+    .item {
+      flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+    }
+    ```
+
+  + align-self（属性允许单个项目有与其他项目不一样的对齐方式）**（覆盖align-items）**
+
+    ```css
+    .item {
+      align-self: auto（继承父级align-items的属性）
+        | flex-start 
+        | flex-end 
+        | center 
+        | baseline 
+        | stretch;（以上都和align-items一样）
+    }
+    ```
+
 #### 双栏布局 三栏布局
+
++ **圣杯布局**
+
+  ```html
+  <div class="container clearfix">
+    <div class="center"></div> 
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+  ```
+
+  ```css
+  html,body {
+    height: 100%;
+    overflow: hidden;
+  }
+  .container {
+    height: 100%;
+    padding: 0 200px;
+  }
+  .left,
+  .right {
+    width: 200px;
+    min-height: 200px;
+    background: lightblue;
+  }
+  .center {
+    width: 100%;
+    min-height: 300px;
+    background: lightsalmon;
+  }
+  .left,.right,.center {
+    float: left;
+  }
+  .left {
+    margin-left: -100%;
+    position: relative;
+    left: -200px;
+  }
+  .right {
+    margin-right: -200px;
+  }
+  ```
+
++ **双飞翼布局**(双飞翼的左右翅膀可以)
+
+  ```html
+  <div class="clearfix">
+    <div class="container">
+    	<div class="center"></div>
+    </div> 
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+  ```
+
+  ```css
+  html,body {
+    height: 100%;
+    overflow: hidden;
+  }
+  .container,.left,.right {
+    float: left;
+  }
+  .container {
+    width: 100%;
+  }
+  .container .center {
+    margin: 0 200px;
+    min-height: 300px;
+    background: lightsalmon;
+  }
+  .left,
+  .right {
+    width: 200px;
+    min-height: 200px;
+    background: lightblue;
+  }
+  .left {
+    margin-left: -100%;
+  }
+  .right {
+    margin-left: -200px;
+  }
+  ```
+
++ **flex布局**
+
+  ```html
+  <div class="container">
+    <div class="left"></div>
+    <div class="center"></div> 
+    <div class="right"></div>
+  </div>
+  ```
+
+  ```css
+  html,body {
+  		  overflow: hidden;
+  		}
+  		.container {
+  		  display: flex;
+  		  justify-content: space-between;
+  		  height: 100%;
+  		}
+  		.left,
+  		.right {
+  		  flex: 0 0 200px;
+  		  height: 200px;
+  		  background: lightblue;
+  		}
+  		.center {
+  		  flex: 1;
+  		  min-height: 400px;
+  		  background: lightsalmon;
+  		}
+  ```
+
++ **定位**
+
+  ```html
+  <div class="container">
+    <div class="left"></div>
+    <div class="center"></div> 
+    <div class="right"></div>
+  </div>
+  ```
+
+  ```css
+  html,body {
+    height: 100%;
+    overflow: hidden;
+  }
+  .container {
+    position: relative;
+    height: 100%;
+  }
+  .left,
+  .right {
+    position: absolute;
+    top: 0;
+    width:200px;
+    height: 200px;
+    background: lightblue;
+  }
+  .left {
+    left: 0;
+  }
+  .right {
+    right: 0;
+  }
+  .center {
+    margin: 0 200px;
+    min-height: 400px;
+    background: lightsalmon;
+  }
+  ```
+
++ **calc计算布局**
+
+  ```
+  <div class="container">
+    <div class="left"></div>
+    <div class="center"></div> 
+    <div class="right"></div>
+  </div>
+  ```
+
+  ```css
+  html,body {
+    height: 100%;
+    overflow: hidden;
+  }
+  .left{
+    float: left;
+    width: 200px;
+    height: 200px;
+    background: lightblue;   
+  }
+  .right{
+    float: left;
+    width: 200px;
+    height: 200px;
+    background: lightblue;
+  }
+  .center{
+    float: left;
+    width: calc(100% - 400px);
+    height: 400px;
+    background: lightsalmon;
+  }
+  ```
+
++ **双栏布局**
+
+  + flex布局（将左侧div浮动，右侧div设置margin-left）
+  + 定位布局（固定区采用绝对定位，自适应区设置margin）
+  + 表格布局（父级display: table;，子级 table-cell）
+  + calc（双float + calc()计算属性）
+  + float + BFC方法
+  + flex 方法
+
++ **三栏布局**
+  + 表格布局
+  + 圣杯布局
+  + 双飞翼布局
+  + flex布局
+  + 定位布局
+  + calc（都float + calc()计算属性）
 
 #### 重排和重绘
 
++ **什么是重排和重绘？**
+
+  + 当浏览器下载完页面所需元素（html标记，css层叠样式表，javascript，图片）之后，会生成两个东西：Dom树和渲染树。
+    + **Dom树**：主要是用来表示页面的Dom结构。
+    + **渲染树**：渲染树主要是用来表示页面是如何进行渲染的。
+  + **重排(Reflow)：**当渲染树的一部分必须更新并且节点的尺寸发生了变化，浏览器会使渲染树中受到影响的部分失效，并重新构造渲染树。
+  + **重绘(Repaint)：**是在一个元素的外观被改变所触发的浏览器行为，浏览器会根据元素的新属性重新绘制，使元素呈现新的外观。比如改变某个元素的背景色、文字颜色、边框颜色等等。
+
++ **如何引发重排**
+
+  1. 添加、删除可见的dom
+
+  2. 元素的位置改变
+
+  3. 元素的尺寸改变(外边距、内边距、边框厚度、宽高、等几何属性)
+
+  4. 页面渲染初始化
+
+  5. 浏览器窗口尺寸改变
+
+  6. 获取某些属性。当获取一些属性时，浏览器为取得正确的值也会触发重排,它会导致队列刷新，这些属性包括：offsetTop、offsetLeft、 offsetWidth、offsetHeight、scrollTop等。**所以，在多次使用这些值时应进行缓存**。
+
++ **优化**
+
+  + 合并对Dom的多次修改
+
 #### CSS选择器
+
++ **ID选择器**
+
+  ```css
+  #id
+  {
+      border:3px dashed green;
+  }
+  ```
+
++ **类选择器**
+
+  ```css
+  .class{
+      width:800px;
+  }
+  ```
+
++ **标签选择器**
+
+  ```css
+  p{
+      font-size:14px;
+  }
+  ```
+
++ **伪类选择器**
+
+  ```css
+  label:hover/*鼠标放在label标签上时显示蓝色*/{
+    color:blue; 
+  }
+  ```
+
++ **属性选择器**
+
+  ```css
+  input[type="text"]
+  {
+    width:150px;
+    display:block;
+    margin-bottom:10px;
+    background-color:yellow;
+    font-family: Verdana, Arial;
+  }
+  ```
+
++ **结构选择器**
+
+  + 后代选择器（子孙都可）**（空格隔开）**
+
+    ```css
+    .div1 p{
+      color:red;
+    }
+    ```
+
+  + 交集选择器（必须同时满足条件）**（用.隔开）**
+
+    ```css
+    h3.special{
+        color:red;
+    }
+    ```
+
+  + 并集选择器**（用逗号隔开）**
+
+    ```css
+    p,h1,#mytitle,.one/*定义了一个并集选择器，带有p,h1,id="mytitle",class="one"的标签都内容会显示红色*/{
+        color:red;
+    }
+    ```
 
 #### CSS动画
 
++ transtion（过渡属性）（一次性，不能循环）
+
+  ```css
+  div
+  {
+      width:100px;
+      transition: width（宽度要改变） 2s（多少秒完成过渡）linear（过渡过程中的速度变化） 2s(定义动画开始前要等待的时间);
+      -webkit-transition: width 2s; /* Safari */
+  }
+  div:hover {width:300px;} /*效果就是鼠标在div上悬浮时宽度会过渡到300，移开后又过渡到100*/
+  ```
+
++ @keyframes（关键帧规则）
+
+  ```css
+  @keyframes mymove（动画的名称）
+  {
+    from {top:0px;}
+    50% {top:100px;}  
+    to {top:200px;}
+  } /*from表示开始，to表示到结束，也可以用百分比表示动画进行的程度*/
+  ```
+
+  ```css
+  div
+  {
+    animation:mymove（动画名称） 5s（动画完成时间）;
+  } /*通过animaton使用*/
+  ```
+
+> 以上的动画创建多属性时，用逗号隔开
+
 #### CSS实现三角形
 
++ **border+transparent**
+
+  ```css
+  .triangle{
+      width: 0;
+      height: 0;
+      border-top: 50px solid black;
+      border-right: 50px solid red;
+      border-bottom: 50px solid green;
+      border-left: 50px solid blue;
+  }
+  ```
+
+  实现效果：
+
+  ![image-20200828215816065](F:\notes\Javascript\img\image-20200828215816065.png)
+
+  因此，只要将其他方向的border颜色设置为透明的就可以了
+
+  ```css
+  .triangle{
+      width: 0;
+      height: 0;
+      border-top: 50px solid black;
+      border-right: 50px solid transparent;
+      border-left: 50px solid transparent;
+  }
+  ```
+
 #### CSS Sprites
+
++ **精灵图的使用**
+  1. background-image：url（引入图片的路径）；可以引入多张图，用逗号隔开即可。
+  2. background-position：x y；x和y是x轴上的偏移值，y是y轴上的偏移值
++ **精灵图的好处**
+  + 减少http请求，提高页面加载速度加载速度
+  + 减少命名困扰
+  + 更换风格更加方便
 
 #### px rem em 
 
@@ -548,7 +1031,7 @@ body{
 
    **（div1是div2和div3的父级，因此1em = 20px，若父级组件没有设置则继承根元素。）**
 
-   ![image-20200827180009008](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200827180009008.png)
+   ![image-20200827180009008](https://github.com/hhyzz/md_img/blob/master/img/image-20200827180009008.png?raw=true)
 
 3. rem是[CSS3](http://www.html5cn.org/portal.php?mod=list&catid=16)新增的一个相对单位（root em，根em），仍然是相对大小，**但相对的只是HTML根元素（即root选择器和html选择器下设置的字体大小，:root{}==html{}）**。
 
@@ -574,6 +1057,46 @@ body{
    }
    ```
 
-   
 
-##### 伪类/伪元素
+#### 伪类/伪元素
+
++ **伪类：**用于选择DOM树上元素不同的状态（:visited :link），或者是DOM上无法用简单选择器选择的元素(:first-child)。（元素本身）伪类用一个：
+  + :active 选择正在被激活的元素 1
+    :hover 选择被鼠标悬浮着元素 1
+    :link 选择未被访问的元素 1
+    :visited 选择已被访问的元素 1
+    :first-child 选择满足是其父元素的第一个子元素的元素 2
+    :lang 选择带有指定 lang 属性的元素 2
+    :focus 选择拥有键盘输入焦点的元素 2
+    :enable 选择每个已启动的元素 3
+    :disable 选择每个已禁止的元素 3
+    :checked 选择每个被选中的元素 3
+    :target 选择当前的锚点元素 3
+    :first-of-type 选择满足是其父元素的第一个某类型子元素的元素 3
+    :last-of-type 选择满足是其父元素的最后一个某类型子元素的元素 3
+    :only-of-type 选择满足是其父元素的唯一一个某类型子元素的元素 3
+    :nth-of-type(n) 选择满足是其父元素的第n个某类型子元素的元素 3
+    :nth-last-of-type(n) 选择满足是其父元素的倒数第n个某类型的元素 3
+    :only-child 选择满足是其父元素的唯一一个子元素的元素 3
+    :last-child 选择满足是其父元素的最后一个元素的元素 3
+    :nth-child(n) 选择满足是其父元素的第n个子元素的元素 3
+    :nth-last-child(n) 选择满足是其父元素的倒数第n个子元素的元素 3
+    :empty 选择满足没有子元素的元素 3
+    :in-range 选择满足值在指定范围内的元素 3
+    :out-of-range 选择值不在指定范围内的元素 3
+    :invalid 选择满足值为无效值的元素 3
+    :valid 选择满足值为有效值的元素 3
+    :not(selector) 选择不满足selector的元素 3
+    :optional 选择为可选项的表单元素，即没有“required”属性 3
+    :read-only 选择有”readonly”的表单元素 3
+    :read-write 选择没有”readonly”的表单元素 3
+    :root 选择根元素 3
++ **伪元素：**DOM树上看不到的元素。和元素相关的内容。（元素周边）伪元素用俩::
+  + ::first-letter 选择指定元素的第一个单词 1
+    ::first-line 选择指定元素的第一行 1
+    ::after 在指定元素的内容前面插入内容 2
+    ::before 在指定元素的内容后面插入内容 2
+    ::selection 选择指定元素中被用户选中的内容 3
+
+![1598617513(1)](F:\notes\Javascript\img\1598617513(1).jpg)
+
