@@ -1098,5 +1098,4 @@ body{
     ::before 在指定元素的内容后面插入内容 2
     ::selection 选择指定元素中被用户选中的内容 3
 
-![1598617513(1)](https://github.com/hhyzz/md_img/blob/master/img/1598617513(1).jpg?raw=true)
-
+![1598617513(1)](https://github.com/hhyzz/md_img/blob/master/img/image-20200829150135099.png?raw=true)
